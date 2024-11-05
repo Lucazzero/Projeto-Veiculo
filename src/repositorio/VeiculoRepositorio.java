@@ -25,7 +25,6 @@ public class VeiculoRepositorio extends BaseRepositorio<Veiculo> {
     public Veiculo Edit(Veiculo instancia) {
         Veiculo veiculo = this.Read(instancia.getCodigo());
         if(veiculo != null){
-            veiculo.setMarca(instancia.getMarca());
             veiculo.setPreco(instancia.getPreco());
             return veiculo;
         }

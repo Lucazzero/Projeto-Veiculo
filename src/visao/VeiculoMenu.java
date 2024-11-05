@@ -132,10 +132,6 @@ public class VeiculoMenu extends BaseMenu {
 
         Veiculo vl = this.srv.Ler(cod);
         if (vl != null){
-            System.out.println("Informe a nova Marca: ");
-            String marca = this.scanner.next();
-            vl.setMarca(marca);
-
             System.out.println("Informe o novo Valor: ");
             Double valor = this.scanner.nextDouble();
             vl.setPreco(valor);
